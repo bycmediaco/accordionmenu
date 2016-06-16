@@ -1,0 +1,129 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {	margin: 0;	padding: 0;	border: 0;	font-size: 100%;	font: inherit;	vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {	display: block;}body {	line-height: 1;}ol, ul {	list-style: none;}blockquote, q {	quotes: none;}blockquote:before, blockquote:after,q:before, q:after {	content: '';	content: none;}table {	border-collapse: collapse;	border-spacing: 0;}
+  
+
+@charset "UTF-8";
+/* CSS Document */
+
+
+.accordion-item{
+	margin-left: 27px;
+	
+	}
+.accordion-item-hd-cta{
+	display:none;
+	}
+
+/*heading styles*/
+
+
+#accordian h3 {
+  /*fallback for browsers not supporting gradients*/
+ 
+  
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 36px;
+  padding: 0 10px;
+  outline: 0;
+}
+
+/*heading hover effect*/
+
+
+#accordian h3:hover { 
+ text-shadow: 0 0 1px rgba(255,255,255,.7);
+ outline: 0;
+ }
+
+/*iconfont styles*/
+
+
+#accordian h3 span {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/*list items*/
+
+
+#accordian li { list-style-type: none; }
+
+/*links*/
+
+
+#accordian ul ul li a {
+  color:#303030;
+  display: block;
+  font-size: 15px;
+  text-decoration: none;
+  transition: all 0.15s;
+}
+#accordian ul ul li a:hover {
+  color:#d20a11;
+
+}
+
+#accordian ul ul li a:hover {
+  
+  border-left: 5px solid #D20A11;
+}
+
+/*Hiding the non-active list items by default*/
+
+
+#accordian ul ul { display: none; }
+
+#accordian li.active ul { display: block; }
+
+.koalapse__title {
+    margin-bottom: 0;
+    position: relative;
+}
+.koalapse__title:after {
+    content: "+";
+    color: #d20a11;
+    font-size: 1.5em;
+    line-height: 1;
+    position: absolute;
+    right: 1rem;
+    top: 0.75rem;
+}
+.koalapse__title[aria-expanded="true"]:after {
+    content:'-';
+}
+.koalapse__title:first-child {
+    border-top: 0;
+}
+.koalapse__title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    border: 0;
+	color:#303030;
+    padding: 1em;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
+.koalapse__title a{
+	color:#303030;
+	 outline: 0;
+	}
+.koalapse__title a:hover{
+	color:#d20a11;
+	text-decoration:none;
+	}
+.koalapse__title:hover,
+.koalapse__title:focus {
+   
+}
+.koalapse__content {
+    background-color: #eee;
+    padding: 0.25em 1em;
+}
+.koalapse__content + .koalapse__title {
+    margin-top: 0;
+}
+

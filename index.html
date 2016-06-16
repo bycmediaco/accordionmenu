@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Accordeon Menu</title>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+
+</head>
+
+<body>
+
+<div class="de">
+ <div id="accordian" class="koalapse">
+                    <ul>
+                        
+                                 <li>
+                                     <h3 class="koalapse__title"><a href="#">deneme1</a></h3>
+                                       <ul>
+                                       
+                                            
+                                            <li>
+                                            <h2><a href="#">deneme33</a></h2>
+                                            </li>
+                                             <li>
+                                            <h2><a href="#">deneme33</a></h2>
+                                            </li>
+                                            
+                                       
+                                       </ul>
+                                 </li>
+                                  <li>
+                                     <h3 class="koalapse__title"><a href="#">deneme1</a></h3>
+                                       <ul>
+                                       
+                                            
+                                            <li>
+                                            <h2><a href="#">deneme33</a></h2>
+                                            </li>
+                                             <li>
+                                            <h2><a href="#">deneme33</a></h2>
+                                            </li>
+                                            
+                                       
+                                       </ul>
+                                 </li>
+                            
+                    </ul>
+</div>
+</div>
+<script>
+ $(document).ready(function() {
+	  $("#accordian h3").click(function() {
+		//Slide up all the link lists
+		$("#accordian ul ul").slideUp();
+		//Slide down the link list below the h3 clicked - only if it's closed
+		if(!$(this).next().is(":visible")) {
+		  $(this).next().slideDown();
+		}
+	  })
+ })
+</script>
+<script src="koalapse.js"></script>
+<script>
+      $('.koalapse').koalapse();
+</script>
+
+
+</body>
+</html>
